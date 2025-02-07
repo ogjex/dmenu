@@ -1,1 +1,0 @@
-../config-h/dmenu-arch-desktop-config.h
