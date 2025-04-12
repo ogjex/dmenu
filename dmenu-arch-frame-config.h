@@ -1,1 +1,0 @@
-../config-h/dmenu-arch-frame-config.h
