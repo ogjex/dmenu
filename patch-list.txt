@@ -2,3 +2,4 @@ alpha
 center
 border
 highlight
+caseinsensitive
