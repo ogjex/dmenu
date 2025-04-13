@@ -29,7 +29,7 @@
 #define OPAQUE                0xffu
 
 /* enums */
-enum { SchemeNorm, SchemeSel, SchemeOut, SchemeNormHighlight, SchemeSelHighlight, SchemeOutHighlight, SchemeLast }; /* color schemes */
+enum { SchemeNorm, SchemeSel, SchemeOut, SchemeNormHighlight, SchemeSelHighlight, SchemeOutHighlight, SchemeBorder, SchemeLast }; /* color schemes */
 struct item {
 	char *text;
 	struct item *left, *right;
@@ -764,7 +764,7 @@ setup(void)
 	                    depth, CopyFromParent, visual,
 	                    CWOverrideRedirect | CWBackPixel | CWBorderPixel | CWColormap | CWEventMask, &swa);
 	if (border_width)
-		XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+		XSetWindowBorder(dpy, win, scheme[SchemeBorder][ColBg].pixel);
  XSetClassHint(dpy, win, &ch);
 
 	/* input methods */
@@ -913,3 +913,4 @@ xinitvisual()
 		cmap = DefaultColormap(dpy, screen);
 	}
 }
+

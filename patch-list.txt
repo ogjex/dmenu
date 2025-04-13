@@ -1,6 +1,6 @@
 alpha
 center
-border
 highlight
 caseinsensitive
 barheight
+bordercolor
