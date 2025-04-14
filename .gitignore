@@ -3,4 +3,4 @@
 # config.h is a symlink to ../config-h/
 #############################################
 
-config.h
+#config.h
