@@ -4,3 +4,4 @@ highlight
 caseinsensitive
 barheight
 bordercolor
+qalc
