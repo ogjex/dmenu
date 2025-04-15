@@ -7,7 +7,8 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 static const float menu_height_ratio = 4.0f;  /* This is the ratio used in the original calculation */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static const int user_bh = 2;               /* add an defined amount of pixels to the bar height */
+static const int user_bh = 0;               /* add an defined amount of pixels to the bar height */
+
 static const char *fonts[] = {
 	"monospace:size=10"
 };
@@ -18,9 +19,9 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeSel] = { "#eeeeee", "#005577" },
 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	[SchemeOut] = { "#000000", "#008080" },
+	[SchemeOut] = { "#000000", "#00ffff" },
 	[SchemeOutHighlight] = { "#ffc978", "#00ffff" },
-	[SchemeBorder] = { "#cccccc", "#90E4C1" },
+	[SchemeBorder] = { "#cccccc", NULL },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
@@ -38,4 +39,4 @@ static unsigned int lines      = 0;
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static unsigned int border_width = 5;
+static unsigned int border_width = 0;
